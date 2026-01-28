@@ -1,0 +1,21 @@
+[package]
+name = "wtfm-octocrab"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+octocrab = { git = "https://github.com/ontouchstart/octocrab", branch = "slim", version = "0.0.0" }
+tower-http = "0.6.8"
+
+
+[dev-dependencies]
+chrono = "0.4.43"
+http = "1.4.0"
+serde = "1.0.228"
+serde_json = "1.0.149"
+tokio = { version = "1.49.0", features = ["macros", "rt-multi-thread", "time"] }
+tokio-test = "0.4.5"
+wiremock = "0.6.5"
+
+[features]
+follow-redirect = ["tower-http/follow-redirect"]
