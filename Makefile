@@ -1,6 +1,10 @@
 all:	install test
 
 install:
+	rustup update
+	rustup --verbose --version
+	rustup toolchain install stable
+	rustup override set stable
 	cargo add octocrab
 	cargo add tower-http
 	cargo add --dev chrono
