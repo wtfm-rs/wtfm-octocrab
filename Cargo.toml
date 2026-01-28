@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-octocrab = "0.49.5"
+octocrab = { git = "https://github.com/ontouchstart/octocrab", branch = "slim", version = "0.0.0" }
 tower-http = "0.6.8"
 
 
