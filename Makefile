@@ -1,6 +1,11 @@
 all:	install test
 
 install:
+	rustup update 
+	rustup toolchain install stable
+	rustup override set stable
+	rustc --verbose --version
+	cargo --verbose --version
 	cargo add --git https://github.com/ontouchstart/octocrab --branch slim
 	cargo add tower-http
 	cargo add --dev chrono
