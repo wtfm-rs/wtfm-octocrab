@@ -1,8 +1,7 @@
 all:	install test
 
 install:
-	#	cargo add octocrab
-	cargo add --git https://github.com/ontouchstart/octocrab --branch slim
+	cargo add octocrab
 	cargo add tower-http
 	cargo add --dev chrono
 	cargo add --dev http
