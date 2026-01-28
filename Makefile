@@ -2,10 +2,11 @@ all:	install test
 
 install:
 	rustup update
-	rustup --verbose --version
 	rustup toolchain install stable
 	rustup override set stable
-	cargo add octocrab
+	rustc --verbose --version
+	cargo --verbose --version
+	cargo add --git https://github.com/ontouchstart/octocrab --branch main
 	cargo add tower-http
 	cargo add --dev chrono
 	cargo add --dev http
