@@ -1,7 +1,7 @@
 all:	install test
 
 install:
-	rustup update 
+	rustup update
 	rustup toolchain install stable
 	rustup override set stable
 	rustc --verbose --version
