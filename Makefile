@@ -14,6 +14,7 @@ install:
 	cargo add --dev serde_json
 	cargo add --dev tokio --features macros,rt-multi-thread,time
 	cargo add --dev tokio-test wiremock
+	cargo update
 
 test:
 	cargo test --tests
