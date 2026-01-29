@@ -6,7 +6,7 @@ install:
 	rustup override set stable
 	rustc --verbose --version
 	cargo --verbose --version
-	cargo add --git https://github.com/ontouchstart/octocrab --branch main
+	cargo add --git https://github.com/wtfm-rs/octocrab --branch main
 	cargo add tower-http
 	cargo add --dev chrono
 	cargo add --dev http
