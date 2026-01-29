@@ -1028,7 +1028,7 @@ dependencies = [
 [[package]]
 name = "octocrab"
 version = "0.0.0"
-source = "git+https://github.com/ontouchstart/octocrab?branch=slim#ff5dde8e664a04241e45b539c9e3a30bb13de3d8"
+source = "git+https://github.com/wtfm-rs/octocrab?branch=slim#ff5dde8e664a04241e45b539c9e3a30bb13de3d8"
 dependencies = [
  "arc-swap",
  "async-trait",
